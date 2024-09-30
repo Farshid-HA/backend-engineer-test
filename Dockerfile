@@ -8,6 +8,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 RUN bun install
+RUN bun add inversify reflect-metadata
 
 # Expose the port the app runs on
 EXPOSE 3000
